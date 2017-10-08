@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Run",
+            "program": "${workspaceRoot}/target/debug/examples/basic",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "preRun"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test",
+            "program": "${workspaceRoot}/target/debug/shared_structs-test",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "preTest"
+        }
+    ]
+}

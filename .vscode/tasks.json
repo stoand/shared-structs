@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "preRun",
+            "command": "cargo build --example basic",
+            "type": "shell",
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "taskName": "preTest",
+            "command": "rm target/debug/shared_structs-* -f; cargo test --no-run && rm target/debug/shared_structs-*.d -f && cp target/debug/shared_structs-* target/debug/shared_structs-test",
+            "type": "shell",
+            "presentation": {
+                "reveal": "never"
+            }
+        }
+    ]
+}

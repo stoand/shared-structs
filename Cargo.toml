@@ -1,6 +1,11 @@
 [package]
+authors = ["Andreas Stocker <shadowstep7@gmail.com>"]
 name = "shared-structs"
 version = "0.1.0"
-authors = ["Andreas Stocker <shadowstep7@gmail.com>"]
 
 [dependencies]
+bytes = "0.4.5"
+error-chain = "0.11.0"
+futures = "0.1.16"
+tokio-core = "0.1.10"
+tokio-io = "0.1.3"
